@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMC Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">△ NMC</a>
+        <div class="nav-links">
+            <a href="#">HOME</a>
+            <a href="#">COMPETITIONS</a>
+            <a href="#">HELP</a>
+        </div>
+        <button class="logout-btn">LOGOUT</button>
+    </nav>
+
+    <div class="dashboard">
+        <div class="dashboard-header">
+            <div class="header-text">
+                <h1>Dashboard</h1>
+                <p>2nd Feb 2025</p>
+                <p>Welcome Back, Santoso!</p>
+            </div>
+            <div class="user-info">
+              <a href="profile.html">Santoso</a>
+          </div>          
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Competitions Participated</h3>
+                <div class="number">10</div>
+                <div class="subtext">All Time</div>
+            </div>
+            <div class="stat-card">
+                <h3>Competitions Won</h3>
+                <div class="number">0</div>
+                <div class="subtext">All Time</div>
+            </div>
+            <div class="stat-card">
+                <h3>Upcoming Registered Competitions</h3>
+                <div class="number">3</div>
+                <div class="subtext">Competition(s)</div>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <h2>Schedule</h2>
+            <div class="schedule-item">
+                <div class="date-box">
+                    <h3>THU</h3>
+                    <p>14</p>
+                </div>
+                <div class="competition-info">
+                    <h4>Competition Name: Star Wars Dubbing</h4>
+                    <p>Category: Dubbing</p>
+                    <p>Time: 13:00 - 16:00</p>
+                    <p class="status ongoing">Status: Ongoing</p>
+                </div>
+                <button class="details-btn">Details</button>
+            </div>
+            <div class="schedule-item">
+                <div class="date-box">
+                    <h3>FRI</h3>
+                    <p>15</p>
+                </div>
+                <div class="competition-info">
+                    <h4>Competition Name: Love your Toilet</h4>
+                    <p>Category: Speech</p>
+                    <p>Time: 11:00 - 14:00</p>
+                    <p class="status incoming">Status: Incoming</p>
+                </div>
+                <button class="details-btn">Details</button>
+            </div>
+        </div>
+
+        <div class="upcoming-competitions">
+            <h2>Upcoming Competitions</h2>
+            <div class="competition-carousel">
+                <div class="competition-card">
+                    <img src="/api/placeholder/250/150" alt="Shrek">
+                    <div class="competition-card-info">
+                        <p>Name: Shrek</p>
+                        <p>Category: Poster Making</p>
+                        <p>Date: TBD</p>
+                    </div>
+                </div>
+                <div class="competition-card">
+                    <img src="/api/placeholder/250/150" alt="Luke I am Your Father">
+                    <div class="competition-card-info">
+                        <p>Name: Luke I am Your Father</p>
+                        <p>Category: Dubbing</p>
+                        <p>Date: TBD</p>
+                    </div>
+                </div>
+                <div class="competition-card">
+                    <img src="/api/placeholder/250/150" alt="Rizz Academy">
+                    <div class="competition-card-info">
+                        <p>Name: Rizz The Audience</p>
+                        <p>Category: Speech</p>
+                        <p>Date: TBD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button id="prevBtn">&lt;</button>
+                <button id="nextBtn">&gt;</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

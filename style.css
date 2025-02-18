@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #dd3833;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.logout-btn {
+    background-color: #dd3833;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.dashboard {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.header-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.header-text p {
+    color: #666;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #333;
+    font-size: 0.875rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: #dd3833;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.stat-card h3 {
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.stat-card .number {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.stat-card .subtext {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.schedule {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.schedule h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.schedule-item {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    align-items: start;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.date-box {
+    text-align: left;
+}
+
+.date-box h3 {
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.date-box p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.competition-info h4 {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.competition-info p {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.details-btn {
+    background-color: #dd3833;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+.upcoming-competitions {
+    margin-top: 2rem;
+}
+
+.upcoming-competitions h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.competition-carousel {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    overflow-x: hidden;
+    padding: 0.5rem 0;
+}
+
+.competition-card {
+    min-width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.competition-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.competition-card-info {
+    padding: 1rem;
+    background-color: #dd3833;
+    color: white;
+}
+
+.competition-card-info p {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.carousel-nav {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.carousel-nav button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ddd;
+    background: white;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status {
+    color: #666;
+}
+
+.status.ongoing {
+    color: #f0ad4e;
+}
+
+.status.incoming {
+    color: #5cb85c;
+}
