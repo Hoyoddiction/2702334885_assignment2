@@ -130,4 +130,8 @@ a {
     width: 100px;
     height: 100px;
     border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    object-fit: cover;
 }
